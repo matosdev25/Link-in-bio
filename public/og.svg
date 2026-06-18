@@ -1,0 +1,11 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#050505"/>
+  <circle cx="220" cy="120" r="260" fill="#E3262E" fill-opacity="0.2"/>
+  <circle cx="1000" cy="180" r="230" fill="#741016" fill-opacity="0.18"/>
+  <rect x="394" y="86" width="412" height="458" rx="80" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.16" stroke-width="2"/>
+  <rect x="512" y="138" width="176" height="176" rx="54" fill="#101010"/>
+  <path d="M548 257V195H566L600 237L634 195H652V257H632V226L607 255H593L568 226V257H548Z" fill="white"/>
+  <path d="M548 284H652" stroke="#E3262E" stroke-width="8" stroke-linecap="round"/>
+  <text x="600" y="378" text-anchor="middle" fill="white" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800">Martin Matos</text>
+  <text x="600" y="424" text-anchor="middle" fill="white" fill-opacity="0.72" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="600">MatosDev · Monexity · Links oficiales</text>
+</svg>
