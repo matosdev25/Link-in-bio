@@ -40,22 +40,22 @@ body {
 @layer utilities {
   .page-shell {
     background-color: rgb(var(--color-paper));
-    background-image: url("/images/backgrounds/ChatGPT Image 20 jun 2026, 01_42_51 p.m. (3).png");
+    background-image: url("/images/backgrounds/sticker-wall-bg-mobile.png");
     background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat-y;
+    background-size: 100% auto;
   }
 
   .studio-grid {
     background: rgb(255 255 255);
   }
 
-  @media (max-width: 767px) {
+  @media (min-width: 768px) {
     .page-shell {
-      background-image: url("/images/backgrounds/sticker-wall-bg-mobile.png");
-      background-position: center top;
-      background-repeat: repeat-y;
-      background-size: 100% auto;
+      background-image: url("/images/backgrounds/sticker-wall-bg-desktop.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 
