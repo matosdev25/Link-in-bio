@@ -174,7 +174,9 @@ function FeaturedCards() {
             <div>
               <p
                 className={`text-[11px] font-medium uppercase tracking-[0.18em] ${
-                  item.id === "monexity" ? "text-monexity-green" : "text-brand-red"
+                  item.id === "monexity"
+                    ? "text-monexity-green [text-shadow:0_1px_2px_rgba(0,0,0,0.45),0_0_8px_rgba(0,0,0,0.25)]"
+                    : "text-brand-red [text-shadow:0_1px_2px_rgba(255,255,255,0.75),0_0_8px_rgba(255,255,255,0.45)]"
                 }`}
               >
                 / {item.eyebrow}
@@ -186,7 +188,7 @@ function FeaturedCards() {
                 item.id === "monexity"
                   ? "bg-transparent"
                   : item.id === "matosdev-web"
-                    ? "border border-white/70 bg-white/45 shadow-[inset_0_1px_1px_rgba(255,255,255,0.9)] backdrop-blur-xl"
+                    ? "bg-transparent"
                   : "bg-transparent"
               }`}
             >
@@ -196,7 +198,7 @@ function FeaturedCards() {
                   alt={item.id === "matosdev-web" ? "MatosDev.xyz" : "MatosDev"}
                   width={48}
                   height={48}
-                  className={`${item.id === "matosdev-web" ? "h-9 w-9" : "h-12 w-12"} object-contain`}
+                  className={`${item.id === "matosdev-web" ? "h-11 w-11" : "h-12 w-12"} object-contain`}
                 />
               ) : item.id === "monexity" ? (
                 <Image
@@ -252,14 +254,14 @@ function Portfolio() {
               style={{ background: "accentGradient" in project ? project.accentGradient : project.accentColor }}
             />
             <div className="relative z-10 flex items-center gap-4">
-              <div className="liquid-inset flex h-16 w-16 shrink-0 items-center justify-center rounded-[20px] text-lg font-black text-ink">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-[20px] bg-transparent text-lg font-black text-ink">
                 {project.logo ? (
                   <Image
                     src={project.logo}
                     alt={project.name}
                     width={52}
                     height={52}
-                    className="max-h-12 max-w-12 object-contain"
+                    className="max-h-14 max-w-14 object-contain"
                   />
                 ) : (
                   <span className="px-1 text-center text-[9px] font-semibold leading-tight text-ink/80">
@@ -268,7 +270,7 @@ function Portfolio() {
                 )}
               </div>
               <div className="min-w-0 flex-1">
-                <p className="mb-1 text-[10px] font-medium uppercase tracking-[0.18em] text-brand-red">
+                <p className="mb-1 text-[10px] font-medium uppercase tracking-[0.18em] text-brand-red [text-shadow:0_1px_2px_rgba(255,255,255,0.75),0_0_8px_rgba(255,255,255,0.45)]">
                   / PROYECTO
                 </p>
                 <h3 className="text-lg font-black tracking-normal text-ink">{project.name}</h3>

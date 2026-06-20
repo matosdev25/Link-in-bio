@@ -40,18 +40,23 @@ body {
 @layer utilities {
   .page-shell {
     background-color: rgb(var(--color-paper));
-    background-image:
-      linear-gradient(rgb(var(--color-ink) / 0.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgb(var(--color-ink) / 0.06) 1px, transparent 1px);
-    background-size: 24px 24px;
+    background-image: url("/images/backgrounds/ChatGPT Image 20 jun 2026, 01_42_51 p.m. (3).png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .studio-grid {
-    background-image:
-      radial-gradient(circle at 20% 30%, rgb(var(--color-ink) / 0.14) 0 1px, transparent 1px),
-      radial-gradient(circle at 70% 60%, rgb(var(--color-ink) / 0.1) 0 1px, transparent 1px);
-    background-size: 13px 17px, 19px 23px;
-    mix-blend-mode: multiply;
+    background: rgb(255 255 255);
+  }
+
+  @media (max-width: 767px) {
+    .page-shell {
+      background-image: url("/images/backgrounds/sticker-wall-bg-mobile.png");
+      background-position: center top;
+      background-repeat: repeat-y;
+      background-size: 100% auto;
+    }
   }
 
   .liquid-card {
