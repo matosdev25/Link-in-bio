@@ -128,7 +128,7 @@ function Hero() {
           whileTap={{ scale: 0.975 }}
           href={links.cal}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-full border border-red-200/60 bg-[linear-gradient(180deg,rgba(255,72,72,0.94),rgba(255,43,43,0.88))] px-4 text-sm font-semibold text-white shadow-[0_16px_38px_rgba(255,43,43,0.30),inset_0_1px_1px_rgba(255,255,255,0.55),inset_0_-12px_20px_rgba(130,0,0,0.18)] outline-none backdrop-blur-xl transition focus-visible:ring-2 focus-visible:ring-red-200/70"
         >
           <UiIcon name="calendar" className="h-5 w-5 text-white" strokeWidth={2} />
@@ -251,7 +251,6 @@ function Portfolio() {
               className="pointer-events-none absolute -left-8 top-2 z-0 h-28 w-28 rounded-full opacity-25 blur-3xl"
               style={{ background: "accentGradient" in project ? project.accentGradient : project.accentColor }}
             />
-            <div className="absolute inset-x-6 top-0 z-10 h-[2px] bg-brand-red/70" />
             <div className="relative z-10 flex items-center gap-4">
               <div className="liquid-inset flex h-16 w-16 shrink-0 items-center justify-center rounded-[20px] text-lg font-black text-ink">
                 {project.logo ? (
@@ -318,7 +317,7 @@ function Agenda() {
           whileTap={{ scale: 0.975 }}
           href={links.cal}
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="inline-flex min-h-12 flex-1 items-center justify-center gap-2 rounded-full border border-red-200/60 bg-[linear-gradient(180deg,rgba(255,72,72,0.94),rgba(255,43,43,0.88))] px-4 text-sm font-semibold text-white shadow-[0_16px_38px_rgba(255,43,43,0.30),inset_0_1px_1px_rgba(255,255,255,0.55),inset_0_-12px_20px_rgba(130,0,0,0.18)] outline-none backdrop-blur-xl transition focus-visible:ring-2 focus-visible:ring-red-200/70"
         >
           <UiIcon name="calendar" className="h-5 w-5 text-white" strokeWidth={2} />
@@ -349,12 +348,8 @@ function Socials() {
               style={{ background: social.accent }}
             />
             <div className="pointer-events-none absolute inset-x-2 top-0 h-1/2 rounded-t-[28px] bg-white/24 blur-xl" />
-            <div
-              className="pointer-events-none absolute inset-x-4 bottom-0 h-[2px] opacity-35 blur-[1px]"
-              style={{ background: social.accent }}
-            />
             <div className="relative z-10 flex w-full items-center gap-2.5">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/75 bg-[linear-gradient(145deg,rgba(255,255,255,0.82),rgba(255,255,255,0.46))] shadow-[0_10px_24px_rgba(17,16,14,0.14),inset_0_1px_1px_rgba(255,255,255,0.98),inset_0_-10px_18px_rgba(17,16,14,0.04)] backdrop-blur-xl">
+              <div className="flex h-[72px] w-[72px] shrink-0 items-center justify-center rounded-full border border-white/75 bg-[linear-gradient(145deg,rgba(255,255,255,0.82),rgba(255,255,255,0.46))] shadow-[0_10px_24px_rgba(17,16,14,0.14),inset_0_1px_1px_rgba(255,255,255,0.98),inset_0_-10px_18px_rgba(17,16,14,0.04)] backdrop-blur-xl">
                 <SocialBrandIcon label={social.label} />
               </div>
               <span className="min-w-0 flex-1 text-[13px] font-extrabold leading-4 text-ink sm:text-sm">
@@ -373,7 +368,7 @@ function SocialBrandIcon({ label }: { label: string }) {
     const gradientId = label.includes("personal") ? "instagram-personal-gradient" : "instagram-matosdev-gradient";
 
     return (
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7 fill-none">
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-[44px] w-[44px] fill-none">
         <defs>
           <linearGradient id={gradientId} x1="4" y1="20" x2="20" y2="4" gradientUnits="userSpaceOnUse">
             <stop stopColor="#f97316" />
@@ -390,7 +385,7 @@ function SocialBrandIcon({ label }: { label: string }) {
 
   if (label === "X") {
     return (
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7 text-ink">
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-[44px] w-[44px] text-ink">
         <path
           d="M5.1 4.5h4.2l3.5 5 4.3-5h2.2l-5.5 6.4 6.1 8.6h-4.2l-3.9-5.5-4.8 5.5H4.8l6-6.9L5.1 4.5Zm3.1 1.7 8.3 11.6h1.2L9.4 6.2H8.2Z"
           fill="currentColor"
@@ -401,7 +396,7 @@ function SocialBrandIcon({ label }: { label: string }) {
 
   if (label === "TikTok") {
     return (
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7">
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-[44px] w-[44px]">
         <path
           d="M14.2 3.6c.35 2.5 1.85 4.1 4.3 4.25v2.75a7.2 7.2 0 0 1-4.15-1.3v5.6a5.25 5.25 0 1 1-5.25-5.25c.35 0 .7.03 1.03.1v2.95a2.28 2.28 0 1 0 1.38 2.1V3.6h2.7Z"
           fill="#22d3ee"
@@ -424,7 +419,7 @@ function SocialBrandIcon({ label }: { label: string }) {
 
   if (label === "GitHub") {
     return (
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7 text-ink">
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-[44px] w-[44px] text-ink">
         <path
           d="M12 3.15a8.85 8.85 0 0 0-2.8 17.25c.45.08.62-.2.62-.43v-1.55c-2.52.55-3.05-1.08-3.05-1.08-.41-1.04-1-1.32-1-1.32-.82-.56.06-.55.06-.55.9.06 1.38.93 1.38.93.8 1.37 2.1.98 2.62.75.08-.58.31-.98.57-1.2-2.02-.23-4.14-1.01-4.14-4.48 0-.99.35-1.8.93-2.43-.09-.23-.4-1.15.09-2.4 0 0 .76-.24 2.48.93A8.55 8.55 0 0 1 12 7.26c.76 0 1.52.1 2.24.3 1.72-1.17 2.47-.93 2.47-.93.5 1.25.19 2.17.1 2.4.58.63.92 1.44.92 2.43 0 3.48-2.13 4.25-4.15 4.48.32.28.61.83.61 1.67v2.36c0 .23.16.51.62.43A8.85 8.85 0 0 0 12 3.15Z"
           fill="currentColor"
@@ -434,7 +429,7 @@ function SocialBrandIcon({ label }: { label: string }) {
   }
 
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7 text-[#ff0000]">
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-[44px] w-[44px] text-[#ff0000]">
       <rect x="3.5" y="6.3" width="17" height="11.4" rx="3.3" fill="currentColor" />
       <path d="M10.4 9.35v5.3l4.8-2.65-4.8-2.65Z" fill="white" />
     </svg>
@@ -513,7 +508,17 @@ function BottomNav() {
                     : ""
                 }`}
               >
-                <UiIcon name={item.icon} className="h-5 w-5" strokeWidth={2.2} />
+                {isMonexity && item.logo ? (
+                  <Image
+                    src={item.logo}
+                    alt="Monexity"
+                    width={22}
+                    height={22}
+                    className="h-5 w-5 object-contain"
+                  />
+                ) : (
+                  <UiIcon name={item.icon} className="h-5 w-5" strokeWidth={2.2} />
+                )}
               </span>
               <span>{item.label}</span>
             </a>

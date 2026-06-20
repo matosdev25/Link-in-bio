@@ -1,7 +1,7 @@
 import type { IconName } from "@/components/ui-icon";
 
 export const links = {
-  cal: "https://cal.com/matosdev",
+  cal: "https://cal.com/martin-matos-vtzql5/consulta-matosdev",
   matosdevMain: "https://matosdev.xyz/",
   whatsapp: "https://wa.me/50761912312",
   whatsappQuote:
