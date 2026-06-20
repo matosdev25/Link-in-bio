@@ -9,19 +9,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://links.matosdev.xyz"),
-  title: "Links MatosDev | Martin Matos",
-  description: "Links oficiales de Martin Matos, MatosDev y Monexity.",
+  metadataBase: new URL("https://matosdev.xyz"),
+  title: "MatosDev | Página en construcción",
+  description: "La nueva web de MatosDev está en construcción. Visita nuestros enlaces oficiales mientras preparamos la nueva experiencia.",
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
     apple: "/favicon.png",
   },
   openGraph: {
-    title: "Links MatosDev | Martin Matos",
-    description: "Links oficiales de Martin Matos, MatosDev y Monexity.",
-    url: "https://links.matosdev.xyz",
-    siteName: "MatosDev Links",
+    title: "MatosDev | Página en construcción",
+    description: "La nueva web de MatosDev está en construcción. Visita nuestros enlaces oficiales mientras preparamos la nueva experiencia.",
+    url: "https://matosdev.xyz",
+    siteName: "MatosDev",
     images: [
       {
         url: "/og.svg",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Links MatosDev | Martin Matos",
-    description: "Links oficiales de Martin Matos, MatosDev y Monexity.",
+    title: "MatosDev | Página en construcción",
+    description: "La nueva web de MatosDev está en construcción. Visita nuestros enlaces oficiales mientras preparamos la nueva experiencia.",
     images: ["/og.svg"],
   },
 };
